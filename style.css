@@ -1,0 +1,175 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body and container */
+body {
+  font-family: 'Tenor Sans', sans-serif;
+  background-color: #fff;
+  color: #333;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Header */
+header {
+  text-align: center;
+  padding: 40px 0;
+}
+
+.logo {
+  max-width: 250px;
+  height: auto;
+}
+
+/* Main content */
+main {
+  margin-bottom: 60px;
+}
+
+section {
+  margin-bottom: 50px;
+}
+
+h1, h2 {
+  font-family: 'Cormorant Garamond', serif;
+  color: #5c3d1b;
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+
+p {
+  margin-bottom: 16px;
+}
+
+.cta-button {
+  display: inline-block;
+  background-color: #5c3d1b;
+  color: #fff;
+  text-decoration: none;
+  padding: 12px 24px;
+  border-radius: 4px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #3e2a15;
+}
+
+/* Form */
+form {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+form label {
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+input[type="text"],
+input[type="email"],
+select {
+  width: 100%;
+  padding: 14px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-family: inherit;
+  transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+select:focus {
+  border-color: #5c3d1b;
+  outline: none;
+}
+
+.radio-group {
+  display: flex;
+  gap: 40px;
+  margin-bottom: 10px;
+}
+
+.radio-group label {
+  font-weight: normal;
+}
+
+.phone-group {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.phone-group select {
+  flex: 1 1 30%;
+}
+
+.phone-group input {
+  flex: 1 1 65%;
+}
+
+/* Submit Button */
+button[type="submit"] {
+  background-color: #5c3d1b;
+  color: white;
+  padding: 14px 28px;
+  font-weight: bold;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #3e2a15;
+}
+
+.disclaimer {
+  font-size: 0.9rem;
+  color: #555;
+  margin-top: 20px;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px 0;
+  font-size: 0.9rem;
+  color: #777;
+  border-top: 1px solid #eee;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .container {
+    padding: 15px;
+  }
+
+  .radio-group {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .phone-group {
+    flex-direction: column;
+  }
+
+  .cta-button {
+    width: 100%;
+    text-align: center;
+  }
+}
