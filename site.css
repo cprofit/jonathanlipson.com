@@ -1,0 +1,394 @@
+/* Consolidated stylesheet combining base styles and custom enhancements for Jonathan Lipson site */
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@700&family=Inter:wght@400;600;700&display=swap');
+
+:root {
+  --gold: #84754e;
+  --emerald: #1e6842;
+  --dark-bg: #23221e;
+  --light-bg: #f7f7f7;
+  --heading-font: 'Cormorant Garamond', serif;
+  --body-font: 'Inter', Arial, sans-serif;
+  --text-color: #191919;
+  --accent-color: var(--gold);
+}
+
+body {
+  font-family: var(--body-font);
+  color: var(--text-color);
+  background: var(--light-bg);
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+
+header {
+  background: #fff;
+  border-bottom: 2px solid var(--gold);
+  padding: 0.5rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 99;
+}
+
+.logo-nav {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: 60px;
+  margin-right: 1rem;
+}
+
+.site-title {
+  font-family: var(--heading-font);
+  font-size: 2rem;
+  color: var(--emerald);
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 2vw;
+  flex-wrap: wrap;
+}
+
+nav ul {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: var(--emerald);
+  font-weight: 600;
+  font-size: 1.1rem;
+  font-family: var(--body-font);
+  transition: color 0.2s;
+}
+
+nav ul li a:hover {
+  color: var(--accent-color);
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(120deg, #fff 75%, #faf6ee 100%);
+  padding: 2.5rem 1rem 2rem 1rem;
+  text-align: center;
+  gap: 1.5rem;
+}
+
+.portrait {
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border: 4px solid var(--gold);
+}
+
+.social-icons {
+  display: flex;
+  gap: 1rem;
+  margin-left: 2rem;
+  align-items: flex-end;
+}
+
+.social-icons svg {
+  width: 26px;
+  height: 26px;
+  opacity: 0.88;
+  transition: opacity 0.2s, filter 0.2s;
+  filter: grayscale(40%);
+  display: block;
+}
+
+.social-icons svg:hover {
+  opacity: 1;
+  filter: grayscale(0%) drop-shadow(0 2px 4px var(--accent-color));
+}
+
+/* Border for Cigar Profit LinkedIn */
+.bordered-icon svg {
+  border: 2px solid var(--gold);
+  border-radius: 8px;
+  box-sizing: border-box;
+  background: #fff;
+}
+
+/* If you want to keep spacing consistent in the flex row (optional) */
+.social-icons .bordered-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-text h1 {
+  font-family: var(--heading-font);
+  font-size: 2.6rem;
+  color: var(--emerald);
+  margin: 0;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.hero-text h2 {
+  font-family: var(--heading-font);
+  color: var(--gold);
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin: 0.6rem 0;
+}
+
+.hero-text p {
+  font-family: var(--body-font);
+  font-size: 1.07rem;
+  max-width: 600px;
+  margin: 1rem auto 0 auto;
+  color: var(--text-color);
+}
+
+.actions {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin: 2rem 0 0 0;
+}
+
+.cta-btn {
+  background: var(--emerald);
+  color: #fff;
+  font-family: var(--body-font);
+  font-size: 1.1rem;
+  padding: 0.75rem 2rem;
+  border-radius: 2rem;
+  border: none;
+  box-shadow: 0 2px 12px rgba(30,104,66,0.08);
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: 700;
+  letter-spacing: 1px;
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+}
+
+.cta-btn:hover {
+  background: var(--gold);
+  color: var(--emerald);
+  box-shadow: 0 2px 16px rgba(227,176,90,0.11);
+}
+
+#contact {
+  background: #fff;
+  padding: 2.5rem 1rem;
+  margin-top: 2rem;
+  border-top: 1px solid #e4dcc6;
+  text-align: center;
+}
+
+#contact h2 {
+  font-family: var(--heading-font);
+  color: var(--emerald);
+  font-size: 1.6rem;
+  margin-bottom: 1.2rem;
+}
+
+form {
+  max-width: 390px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+form input, form textarea {
+  font-family: var(--body-font);
+  padding: 0.7rem;
+  border: 1.4px solid #dadada;
+  border-radius: 0.4rem;
+  font-size: 1rem;
+}
+
+form button {
+  background: var(--gold);
+  color: #191919;
+  font-family: var(--body-font);
+  font-weight: 700;
+  border: none;
+  border-radius: 2rem;
+  padding: 0.7rem;
+  font-size: 1.08rem;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+
+form button:hover {
+  background: var(--emerald);
+  color: #fff;
+}
+
+footer {
+  text-align: center;
+  font-family: var(--body-font);
+  color: #686868;
+  padding: 1.2rem 0 0.7rem 0;
+  background: #fff;
+  border-top: 1px solid #e4dcc6;
+  font-size: 0.99rem;
+}
+
+/* CV/Resume styles */
+.cv-profile, .cv-experience, .cv-education, .cv-skills {
+  max-width: 800px;
+  margin: 2rem auto 0 auto;
+  padding: 1.2rem 1.5rem;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 2px 14px rgba(30,104,66,0.07);
+}
+
+.cv-profile h1 {
+  font-family: var(--heading-font);
+  font-size: 2.3rem;
+  color: var(--emerald);
+  margin-bottom: 0.2em;
+}
+
+.cv-profile h2 {
+  color: var(--gold);
+  font-size: 1.15rem;
+  margin-bottom: 0.7em;
+  font-family: var(--heading-font);
+}
+
+.cv-job h3, .cv-edu-block {
+  font-family: var(--heading-font);
+  font-size: 1.05rem;
+  color: var(--emerald);
+  margin-bottom: 0.15em;
+}
+
+.cv-job h3 span {
+  font-family: var(--body-font);
+  color: #565656;
+  font-size: 0.95rem;
+  font-weight: normal;
+  margin-left: 0.4em;
+}
+
+.cv-job ul, .cv-skills-list {
+  padding-left: 1.2em;
+  margin-top: 0.3em;
+  margin-bottom: 1.1em;
+  list-style: disc inside;
+  font-size: 1rem;
+}
+
+.cv-education, .cv-skills {
+  margin-top: 1.8rem;
+}
+
+.cv-edu-block {
+  margin-top: 0.5em;
+}
+
+.cv-skills-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 0.5rem 1.5rem;
+  list-style: none;
+  padding: 0;
+}
+
+.cv-skills-list li {
+  background: #f7f7f7;
+  border-radius: 8px;
+  padding: 0.35em 1em;
+  color: var(--emerald);
+  font-weight: 600;
+  font-size: 0.97rem;
+  margin-bottom: 0.15em;
+  box-shadow: 0 1px 3px rgba(132,117,78,0.06);
+}
+
+/* Mobile and small screen adjustments */
+@media (max-width: 700px) {
+  /* Reduce padding for hero section on small screens */
+  .hero {
+    padding: 1.2rem 0.4rem;
+  }
+  /* Stack the navigation and left align for better readability */
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  nav ul {
+    flex-direction: column;
+    gap: 0.7rem;
+    align-items: flex-start;
+    margin-top: 0.5rem;
+  }
+  /* Position social icons below the nav list */
+  .social-icons {
+    margin-left: 0;
+    margin-top: 0.8rem;
+    order: 3;
+  }
+  /* Stack call-to-action buttons */
+  .actions {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  /* Smaller portrait on small screens */
+  .portrait {
+    width: 130px;
+    height: 130px;
+  }
+}
+
+/* Make the site title behave like a clickable link to home */
+.site-title a {
+  color: var(--emerald);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.site-title a:hover {
+  color: var(--accent-color);
+}
+
+/* Back to top button positioning and styling */
+.back-to-top {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  width: 48px;
+  height: 48px;
+  background: var(--emerald);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+  opacity: 0.8;
+  transition: opacity 0.2s, background 0.2s;
+  z-index: 1000;
+}
+.back-to-top:hover {
+  opacity: 1;
+  background: var(--gold);
+}
+.back-to-top img {
+  width: 24px;
+  height: 24px;
+}

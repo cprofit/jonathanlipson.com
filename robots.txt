@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://www.jonathanlipson.com/sitemap.xml

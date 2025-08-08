@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+  <channel>
+    <title>Jonathan Lipson — Insights</title>
+    <link>https://www.jonathanlipson.com/</link>
+    <description>Insights and strategies from Jonathan Lipson, Executive Consultant in the premium cigar industry.</description>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 08 Aug 2025 21:15:58 +0000</lastBuildDate>
+    <atom:link href="https://www.jonathanlipson.com/rss.xml" rel="self" type="application/rss+xml" />
+
+    <!-- Example item — replace or duplicate for new posts -->
+    <item>
+      <title>Positioning in the Age of Exposure</title>
+      <link>https://www.jonathanlipson.com/insights/positioning-in-the-age-of-exposure</link>
+      <guid isPermaLink="true">https://www.jonathanlipson.com/insights/positioning-in-the-age-of-exposure</guid>
+      <pubDate>Fri, 08 Aug 2025 21:15:58 +0000</pubDate>
+      <description><![CDATA[An in-depth look at optics and behavior in the premium cigar industry under modern scrutiny.]]></description>
+    </item>
+
+  </channel>
+</rss>
