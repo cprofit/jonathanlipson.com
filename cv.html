@@ -158,11 +158,33 @@
 </main>
 <section id="contact">
 <h2>Contact</h2>
-<form action="https://formsubmit.co/" method="POST">
-<input name="name" placeholder="Your Name" required="" type="text"/>
-<input name="email" placeholder="Your Email" required="" type="email"/>
-<textarea name="message" placeholder="Your Message" required="" rows="4"></textarea>
-<button type="submit">Send Message</button>
+<form action="https://api.jonathanlipson.com/api/contact" method="POST">
+  <label>
+    <span>Your name</span>
+    <input type="text" name="name" required>
+  </label>
+
+  <label>
+    <span>Your email</span>
+    <input type="email" name="email" required>
+  </label>
+
+  <label>
+    <span>Your message</span>
+    <textarea name="message" rows="5" required></textarea>
+  </label>
+
+  <!-- Honeypot -->
+  <input type="text" name="_honey" style="display:none" autocomplete="off" tabindex="-1">
+
+  <!-- Optional redirect after success -->
+  <input type="hidden" name="_redirect" value="https://www.jonathanlipson.com/thanks.html">
+
+  <!-- Turnstile widget -->
+  <div class="cf-turnstile" data-sitekey="0x4AAAAAABqpbs5npyVuAmEt"></div>
+  <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
+
+  <button type="submit">Send</button>
 </form>
 </section>
 <footer>
