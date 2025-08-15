@@ -1,0 +1,9 @@
+{
+  "name": "jl-contact-api",
+  "version": "1.0.0",
+  "type": "commonjs",
+  "engines": { "node": ">=18" },
+  "dependencies": {
+    "nodemailer": "^6.9.11"
+  }
+}
